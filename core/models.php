@@ -1,7 +1,7 @@
 <?php
 class Models{
     static $connections =array();
-    public $type ='default';
+    public $type ='dev';
     public $table = false;
     public $db;
     public $primaryKey = false;

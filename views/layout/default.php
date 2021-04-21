@@ -39,7 +39,7 @@
         <!-- Footer -->
         <footer class="container-fluid footer">
             <div class="container">
-                <h2 id="contact">Contacter-moi</h2>
+                <h2 id="contact">Contactez-moi</h2>
                 <hr class="separator_2">
                 <div class="row">
                    <!-- <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 item-folio">-->

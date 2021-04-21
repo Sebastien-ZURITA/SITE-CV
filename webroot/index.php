@@ -11,11 +11,13 @@ define ('DS', DIRECTORY_SEPARATOR);
 /** DOSSIER CONTENANT LE FRAMEWORK (CORE) **/
 define ('CORE', ROOT.DS.'core');
 /** BASE URL **/
-//if(dirname(dirname($_SERVER['SCRIPT_NAME']))=='\\'){
+//if(dirname(dirname($_SERVER['SCRIPT_NAME']))!=='\\' and 
+if($_SERVER['SERVER_ADDR']!='127.0.0.1') {
     $baseUrl = 'https://'.$_SERVER['SERVER_NAME'];
-//}else{
-//    $baseUrl = dirname(dirname($_SERVER['SCRIPT_NAME']));
-//}
+}else{
+    $baseUrl = 'http://'.$_SERVER['SERVER_NAME'];
+}
+echo 'base:'.$baseUrl;
 define ('BASE_URL', $baseUrl);
 /** FICHIER DE PARAMETRAGE DU CORE **/
 require CORE.DS.'config.php';

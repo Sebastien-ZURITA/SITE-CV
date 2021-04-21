@@ -2,7 +2,7 @@
 class Conf{
     static $debug =1;
     static $databases=array(
-        'default' => array(
+        'dev' => array(
             'host'          =>  'localhost',
             'database'      =>  'dbs1827683',
             'login'         =>  'root',
