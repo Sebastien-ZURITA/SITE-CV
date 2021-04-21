@@ -59,10 +59,15 @@ class USersCtls extends Controllers{
 
                 if (!empty($users)){
                     $this->session->write('user',$users);                   
-                   
                     
                     if($this->session->isLogged()){
-                        $this->redirect($_SESSION['goTo']);
+                        if(isset($_SESSION['goTo'])){
+                            $this->redirect($_SESSION['goTo']);
+                        }else{
+                            $this->redirect('');
+                        }
+                        
+
                     }
                 }
 

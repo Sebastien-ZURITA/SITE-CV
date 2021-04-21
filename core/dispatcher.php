@@ -27,8 +27,6 @@
                     $this->error('Le controller "'.$this->request->nameCtls.'"  n\'a pas de méthode "'.$this->request->actions.'".');
                 }
             }
-            debug($this->request);
-
         }
 
         /**
@@ -51,7 +49,7 @@
                 require $this->request->fileCtls;
                 $controller = new $this->request->nameCtls($this->request);
                 $controller->session = new Session();
-                $controller->session->goTo ='';
+                $controller->session->write('goTo','');
 
             }else{
                 $this->error('Le controller "'.$this->request->nameCtls.'"  n\'existe pas.');

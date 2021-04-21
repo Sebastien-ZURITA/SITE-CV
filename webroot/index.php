@@ -17,7 +17,7 @@ if($_SERVER['SERVER_ADDR']!='127.0.0.1') {
 }else{
     $baseUrl = 'http://'.$_SERVER['SERVER_NAME'];
 }
-echo 'base:'.$baseUrl;
+
 define ('BASE_URL', $baseUrl);
 /** FICHIER DE PARAMETRAGE DU CORE **/
 require CORE.DS.'config.php';
