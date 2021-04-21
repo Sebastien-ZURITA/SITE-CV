@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- ref entete-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mon atelier en ligne</title>
+        <!-- Icone Onglet -->
+        <link rel="icon" type="image/ico" href="<?php echo BASE_URL?>/img/favicon.ico" />
+        <!--CSS-->
+        <link rel="stylesheet" href="<?php echo BASE_URL?>/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo BASE_URL?>/css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 1024px)" href="<?php echo BASE_URL?>/css/style_small.css">
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="<?php echo BASE_URL?>/js/bootstrap.bundle.min.js"></script>
+
+
+    </head>
+    <!-- End ref entete -->
+    <!-- contenu du site -->
+    <body>
+    <?php //echo $content_for_layout; ?>
+        <!-- header -->
+        <header class="container-fluid header">
+            <div class="container">
+            
+                <div class="logo">
+                    <a href="#" >Sébastien ZURITA</a>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light menu">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" >Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" >A Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" >Mes Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" >Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <!-- bannière -->
+        <section class="container-fluid banner">
+            <div class="ban">
+                <img src="<?php echo BASE_URL?>/img/ban.jpg" alt="bannière du site"/>
+            </div>
+            <div class="inner-banner">
+                <h1> Bienvenue dans mon atelier</h1>
+                <a href="#contact" class="btn btn-light" >Contact moi</a>
+
+            </div>
+        </section>
+        <!-- End bannière -->
+
+        <!-- A Propos -->
+        <section class="container-fluid about">
+            <div class="container">
+                <h2 id="about">A propos de moi</h2>
+                <hr class="separator_2">
+                <div class="row">
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <h3>Etudes</h3>
+                        <hr class="separator_3">
+                        <ul>
+                            <li><p>MASTER ESC CHAMBERY SAVOIE
+                                </br> 2007 - 2010
+                                </p>
+                            </li>
+                            <li>
+                                <p>BTS COMPTABILITE LYCEE DU GRANIER
+                                </br> 2005 - 2007
+                                </p>
+                        </li>
+                            <li>
+                                <p>BAC STT INFORMATIQUE DE GESTION
+                                </br> 2005 (Mention Assez-Bien)
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <h3>Expériences</h3>
+                        <hr class="separator_3">
+                        <ul>
+                            <li>
+                                <p>CHEF DE PROJET - CT-IPC (Oyonnax [01])
+                                </br> de Juillet 2018 au Mars 2020
+                                </p>
+                            </li>
+                            <li>
+                                <p>CHARGE DE MISSION - CCIR AURA
+                                </br> de Mai 2017 au Juin 2018
+                                </p>
+                            </li>
+                            <li>
+                                <p>RESPONSABLE INFORMATIQUE </br> SOGEMA (Oyonnax [01])
+                                </br> de Octobre 2013 au Avril 2017
+                                </p>
+                            </li>
+
+                        </ul>
+                    </article>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12 inner-about">
+                        <h3>Logiciels Utilisés</h3>
+                        <hr class="separator_3">
+                        <ul>
+                            <li>
+                                <p>TALEND (ETL ESB)</p>
+                            </li>
+                            <li>
+                                <p>SQL SERVER (SSIS, SSRS, SSAS, SMS)</p>
+                            </li>
+                            <li>
+                                <p>MY SQL ou PostgreSQL ou MariaDB</p>
+                            </li>
+                            <li>
+                                <p>GLPI</p>
+                            </li>
+                            <li>
+                                <p>TEAMVIEWER</p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- End A Propos -->
+
+        <!-- A Porfolio -->
+        <section class="container-fluid portfolio">
+            <div class="container">
+                
+                    <h2 id="portfolio">MERS PROJETS</h2>
+                    <hr class="separator_2">
+
+                <div class="row">
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/MINI_ERP.jpg" alt="MINI_ERP" class="image">
+                            <div class="overlay">
+                              <div class="text">
+                                  <h4>MINI ERP ASSOCIATIF</h4>
+                              </div>
+                            </div>
+                          </div>
+                    </article>
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/CHRONO.jpg" alt="CHRONO" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>CHRONOMETRE RAID MULTISPORT</h4>
+                                </div>
+                            </div>
+                          </div>
+                    </article>
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/GESTION_RDV.jpg" alt="GESTION RDV" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>APPLICAITON DE PLANNIFICATION DE RDV</h4>
+                                </div>
+                            </div>
+                          </div>
+                    </article>
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/MY_HOME.jpg" alt="HOME" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                  <h4>CONSTRUCTION DE MA MAISON DE A - Z</h4>
+                                </div>
+                            </div>
+                          </div>
+                    </article>
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/SWAPER.jpg" alt="SWAPER" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>AUTOMATISATION DE INTERFACE :SWAPPER</h4>
+                                </div>
+                            </div>
+                          </div>
+                    </article>
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/EVERWIN_1.jpg" alt="EVERWIN" class="image">
+                            <div class="overlay">
+                              <div class="text">ADMINISTRATION EVERWIN GX</div>
+                            </div>
+                          </div>
+                    </article>
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/N2F_1.jpg" alt="N2F" class="image">
+                            <div class="overlay">
+                              <div class="text">INTEGRATION LOGICIEL N2F</div>
+                            </div>
+                          </div>
+                    </article>
+                    <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                        <div class="container">
+                            <img src="<?php echo BASE_URL?>/img/project/SITE_WEB.jpg" alt="SITE_WEB" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>CREATION DE MON SITE INTERNET</h4>
+                                </div>
+                            </div>
+                          </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- End A Porfolio -->
+
+        <!-- Footer -->
+        <footer class="container-fluid footer">
+            <div class="container">
+                <h2 id="contact">Contacter-moi</h2>
+                <hr class="separator_2">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 item-folio">
+                        <h3>Réseau Social</h3>
+                        <hr class="separator_3">
+                        <div class="row">
+                            <div class="icon"><a href="https://www.linkedin.com/in/sebastien-zurita" target="_blank"><img src="img/linkedin.png" alt="Linkedin"/></a></div>
+                            <div class="icon"><a href="https://www.facebook.com/sebastien.zurita" target="_blank"><img src="img/facebook.png" alt="Facebook"/></a></div>
+                            <div class="icon"><a href="mailto:sebastien@zurita.fr?subject=Premier contact" target="_blank"><img src="img/mail.png" alt="mail"/></a></div>
+                            <div class="icon"><a href="https://www.spotify.com/fr" target="_blank"><img src="img/spotify.png" alt="Spotify"/></a></div>
+                        </div>
+                        <!--<div class="row img-footer">
+                            <img src="https://blog.integral-system.fr/wp-content/uploads/2017/12/industry-4-0-dm4674.jpg" />
+                        </div> -->
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 item-folio">
+                        <div class="form-area">  
+                            <form role="form" method="post">
+                                <br style="clear:both">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" autocomplete = "nickname" required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email" required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required/>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>                 
+                                </div>
+                                <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 item-folio">
+                        <div class="licence">
+                            <p>Image made by <a href="https://fr.freepik.com/photos-vecteurs-libre/affaires">Affaires photo créé par rawpixel.com - fr.freepik.com</a>
+                            - Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+                            </br> Copyright (c) 2020 Copyright Holder Sébastien ZURITA All Right Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </body>
+    <!-- End contenu du site-->
+
+</html>
