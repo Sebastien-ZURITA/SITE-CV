@@ -11,11 +11,11 @@ define ('DS', DIRECTORY_SEPARATOR);
 /** DOSSIER CONTENANT LE FRAMEWORK (CORE) **/
 define ('CORE', ROOT.DS.'core');
 /** BASE URL **/
-if(dirname(dirname($_SERVER['SCRIPT_NAME']))=='\\'){
-    $baseUrl = 'http://'.$_SERVER['SERVER_NAME'];
-}else{
-    $baseUrl = dirname(dirname($_SERVER['SCRIPT_NAME']));
-}
+//if(dirname(dirname($_SERVER['SCRIPT_NAME']))=='\\'){
+    $baseUrl = 'https://'.$_SERVER['SERVER_NAME'];
+//}else{
+//    $baseUrl = dirname(dirname($_SERVER['SCRIPT_NAME']));
+//}
 define ('BASE_URL', $baseUrl);
 /** FICHIER DE PARAMETRAGE DU CORE **/
 require CORE.DS.'config.php';
@@ -25,4 +25,3 @@ line-height:30px; height:30px; left:0; right:0; padding-left:10px;">
 <?php
 echo 'Page générée en '.round(microtime(true)-$debut,5).' secondes';
 ?>
-</div>

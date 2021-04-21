@@ -1,1 +1,4 @@
-print_r($_SERVER);
+<?php
+Echo($_SERVER);
+
+?>

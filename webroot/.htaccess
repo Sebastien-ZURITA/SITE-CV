@@ -1,5 +1,6 @@
 RewriteEngine On
 
+RewriteBase /kunden/homepages/18/d533225499/htdocs/d_ZURITA/ssd_SEBASTIEN/webroot
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
