@@ -26,8 +26,7 @@ class USersCtls extends Controllers{
      */
     function getNavBar(){
         $request = new stdClass();
-        $request->fileCtls = CTLS.DS.'pagesctls.php';
-        debug($request->fileCtls);
+        $request->fileCtls = CTLS.DS.'pagesCtls.php';
         require_once $request->fileCtls;
         $pagesPost = new PagesCtls($request);
         return $pagesPost->getNavBar();
