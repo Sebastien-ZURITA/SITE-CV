@@ -27,6 +27,7 @@
                     $this->error('Le controller "'.$this->request->nameCtls.'"  n\'a pas de méthode "'.$this->request->actions.'".');
                 }
             }
+            debug($this->request);
 
         }
 

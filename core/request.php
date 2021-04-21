@@ -11,11 +11,23 @@
             /**
              * GESTION DE L'URL SI PAS DE PATH_INFO
              */
-            if (isset($_SERVER['PATH_INFO'])){
-                $this->url = $_SERVER['PATH_INFO'];
-            }else{
-                $this->url = 'pages/index/homepage';
-            }
+
+                /** PARAM IONOS **/
+
+                if(isset($_SERVER['ORIG_PATH_INFO'])){
+                    if($_SERVER['ORIG_PATH_INFO']!='/webroot/index.php'){
+                        $_SERVER['PATH_INFO']=$_SERVER['ORIG_PATH_INFO'];
+                    }else{
+                        unset($_SERVER['PATH_INFO']);
+                    }
+                }
+                
+                /** PARAM STANDARD **/
+                if (isset($_SERVER['PATH_INFO'])){
+                    $this->url = $_SERVER['PATH_INFO'];
+                }else{
+                    $this->url = 'pages/index/homepage';
+                }
 
             /**
              * RECUPERATION DE LA VARIABLE PAGE
